@@ -1,0 +1,46 @@
+data_root:
+
+  data_root_folder: "/home/robot/Project/OverlapTransformer/data_root_folder/" # KITTI sequences root
+  valid_scan_folder: "/home/robot/下载/kitti/sequences/02/velodyne" # KITTI sequence 02 velodyne
+  gt_valid_folder: "/home/robot/Project/OverlapTransformer/gt_valid_folder/" # KITTI sequence 02 computed overlaps
+
+#  data_root_folder: "/home/robot/Project/OverlapTransformer/dataset-1/" # Ford campus sequences root
+#  valid_scan_folder: "/home/robot/下载/kitti/sequences/02/velodyne" # KITTI sequence 02 velodyne
+#  gt_valid_folder: "/home/robot/Project/OverlapTransformer/gt_valid_folder/" # KITTI sequence 02 computed overlaps
+
+#  data_root_folder: "/home/robot/Project/CVTNet/NCLT/" # NCLT sequences root
+
+
+demo1_config:
+
+  calib_file: "/home/robot/Project/OverlapTransformer/data_root_folder/00/calib.txt" # calibration file from KITTI 00
+  poses_file: "/home/robot/Project/OverlapTransformer/weights/00.txt" # pose file from KITTI 00
+  test_weights: "/home/robot/Project/OverlapTransformer/weights/pretrained_overlap_transformer.pth.tar" # pretrained model
+
+
+training_config:
+
+  training_seqs: ["03", "04", "05","06", "07", "08", "09", "10"] # KITTI sequences for training
+#  training_seqs: ["2012-01-08_vel/2012-01-08"] # KITTI sequences for training
+
+test_config:
+
+  test_seqs: ["00"] # KITTI sequence 00 for evaluation
+  test_weights: "/home/robot/下载/OverlapTransformer-master-copy/weights/final_weight/trained_overlap_transformer16.pth.tar" # pretrained model
+  gt_file: "/home/robot/Project/OverlapTransformer/data_root_folder/loop_gt_seq00_0.3overlap_inactive.npz" # ground truth
+
+#  test_seqs: [ "00" ] # Ford campus sequence 00 for evaluation
+#  test_weights: "/home/robot/下载/OverlapTransformer-master-copy/weights/shift_bimamba_sppf_80/trained_overlap_transformer4.pth.tar" # pretrained model
+#  gt_file: "/home/robot/下载/Ford campus/loop_gt_seq00_0.3overlap_inactive.npz" # ground truth
+
+#  test_seqs: ["2012-02-05_vel/2012-02-05"] # KITTI sequence 00 for evaluation
+#  test_weights: "/home/robot/下载/OverlapTransformer-master-copy/weights/nclt_npy/pretrained_overlap_transformer_haomo22.pth.tar" # pretrained model
+#  gt_file: "/home/robot/Project/CVTNet/NCLT/2012-02-05_vel/2012-02-05/overlaps/gt.npz" # ground truth
+
+
+viz_config:
+
+  calib_file: "/home/robot/Project/OverlapTransformer/data _root_folder/00/calib.txt" # calibration file from KITTI 00
+  poses_file: "/home/robot/Project/OverlapTransformer/weights/00.txt" # pose file from KITTI 00
+  cov_file: "/home/robot/Project/OverlapTransformer/weights/covariance_2nd.txt" # covariance file from SUMA++ on KITTI 00
+

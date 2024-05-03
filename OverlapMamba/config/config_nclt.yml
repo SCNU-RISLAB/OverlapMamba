@@ -1,0 +1,17 @@
+file_root:
+  data_root_folder: "/home/robot/Project/CVTNet/NCLT/2012-01-08_vel/2012-01-08/depth_map/"
+  triplets_for_training: "/home/robot/Project/CVTNet/more_chosen_normalized_data_120108.npy"
+  pose_file_database: "/home/mjy/datasets/haomo_data/stamps_calibrated_poses_1208_1_01.npy"
+  pose_file_query: "/home/mjy/datasets/haomo_data/stamps_calibrated_poses_1208_1_02.npy"
+
+
+  data_root_folder_test: "/home/robot/Project/CVTNet/NCLT/2012-02-05_vel/2012-02-05/depth_map/"
+
+
+  test_weights: "/home/robot/下载/OverlapTransformer-master-copy/weights/nclt_o1-shift2/trained_overlap_transformer5.pth.tar"
+  #gt_file: "/home/robot/Project/CVTNet/gt_120108_120205.npy"
+  gt_file: "/home/robot/Project/SeqOT-main/data_prepararion/gt/gt_120108_120205.npy"
+
+training_config:
+
+  training_seqs: ["2012-01-08_vel/2012-01-08"] # KITTI sequences for training
