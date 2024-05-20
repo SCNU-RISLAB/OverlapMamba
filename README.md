@@ -1,5 +1,13 @@
 # OverlapMamba: Novel Shift State Space Model for LiDAR-based Place Recognition
 
+
+<p align="center">
+<img src="./OverlapMamba/fig.png" width="90%">
+</p>
+<b><p align="center" style="margin-top: -20px;">
+Video demo
+</b></p>
+
 ### 💾Environment
 
 
