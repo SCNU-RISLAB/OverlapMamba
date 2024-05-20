@@ -181,6 +181,9 @@ After you run `test_kitti00_prepare.py`, a file named `predicted_des_L2_dis.npz`
 
 For a quick test of the training and testing procedures, you could use our [pretrained model](https://github.com/SCNU-RISLAB/OverlapMamba/blob/main/OverlapMamba/data_root_folder/pretrained_overlap_mamba.pth.tar).  
 
+## Performance
+The code of this repo realizes a minimal PyTorch implementation of Mamba, which implements the scan operation as a sequential loop. It closely follows this file from the officile Mamba implementation, but replaces the CUDA convolution with `torch.nn.Convld`, and the selective scan written in CUDA with a sequential loop. Hence its performance are a bit worse than the officile Mamba implementation.
+
 
 ## 👏Acknowledgment
 This repo is based on [OverlapTransformer](https://github.com/haomo-ai/OverlapTransformer) and [mamba.py](https://github.com/alxndrTL/mamba.py), we are very grateful for their excellent work
