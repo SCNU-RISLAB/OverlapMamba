@@ -180,7 +180,9 @@ After you run `test_kitti00_prepare.py`, a file named `predicted_des_L2_dis.npz`
 
 
 ## Performance
-The code of this repo realizes a minimal PyTorch implementation of Mamba, which implements the scan operation as a sequential loop. It closely follows this file from the officile Mamba implementation, but replaces the CUDA convolution with `torch.nn.Convld`, and the selective scan written in CUDA with a sequential loop. Hence its performance are a bit worse than the officile Mamba implementation.
+The code of this repo uses a minimal PyTorch implementation of Mamba, which implements the scan operation as a sequential loop. It closely follows the file of the official Mamba implementation, but its performance are a bit worse than the official Mamba implementation.
+
+After our paper is accepted, we will provide a C++ implementation of OverlapMamba with libtorch for faster retrival.
 
 
 ## 👏Acknowledgment
