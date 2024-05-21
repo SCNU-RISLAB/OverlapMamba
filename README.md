@@ -2,7 +2,7 @@
 
 
 <p align="center">
-<img src="./OverlapMamba/fig.png" width="90%">
+<img src="./fig.png" width="90%">
 </p>
 <b><p align="center" style="margin-top: -20px;">
 Overview of OverlapMamba </b></p>
@@ -42,7 +42,7 @@ To use a GPU, first you need to install the nvidia driver and CUDA.
 
 ## 📖How to use
 
-We provide a training and test tutorial for KITTI sequences in this repository. Before any operation, please modify the [config file](https://github.com/SCNU-RISLAB/OverlapMamba/blob/main/OverlapMamba/config/config.yml) according to your setups.
+We provide a training and test tutorial for KITTI sequences in this repository. Before any operation, please modify the [config file](https://github.com/SCNU-RISLAB/OverlapMamba/blob/main/config/config.yml) according to your setups.
 
 ### 📚Dataset 
 
@@ -130,11 +130,11 @@ You need to download or generate the following files and put them in the right p
 
 ### Quick Use
 
-For a quick use, you could download our [model pretrained on KITTI](https://github.com/SCNU-RISLAB/OverlapMamba/blob/main/OverlapMamba/data_root_folder/pretrained_overlap_mamba.pth.tar), and the following two files also should be downloaded :
+For a quick use, you could download our [model pretrained on KITTI](https://github.com/SCNU-RISLAB/OverlapMamba/blob/main/data_root_folder/pretrained_overlap_mamba.pth.tar), and the following two files also should be downloaded :
 - [calib_file](https://drive.google.com/file/d/1LAcFrRSZQPxdD4EKSwIC0d3-uGvLB3yk/view?usp=sharing): calibration file from KITTI 00.
 - [poses_file](https://drive.google.com/file/d/1n02m1OqxK122ce8Cjz_N68PkazGqzj9l/view?usp=sharing): pose file from KITTI 00.
 
-Then you should modify `demo1_config` in the file [config.yaml](https://github.com/SCNU-RISLAB/OverlapMamba/blob/main/OverlapMamba/config/config.yml).  
+Then you should modify `demo1_config` in the file [config.yaml](https://github.com/SCNU-RISLAB/OverlapMamba/blob/main/config/config.yml).  
 
 Run the demo by:  
 
@@ -147,7 +147,7 @@ You can see a query scan (000000.bin of KITTI 00) with a reprojected positive sa
 
 ### Training
 
-In the file [config.yaml](https://github.com/SCNU-RISLAB/OverlapMamba/blob/main/OverlapMamba/config/config.yml), `training_seqs` are set for the KITTI sequences used for training.  
+In the file [config.yaml](https://github.com/SCNU-RISLAB/OverlapMamba/blob/main/config/config.yml), `training_seqs` are set for the KITTI sequences used for training.  
 
 You can start the training with
 
@@ -155,12 +155,12 @@ You can start the training with
 cd train
 python ./training_overlap_mamba_kitti.py
 ```
-You can resume from our pretrained model [here](https://github.com/SCNU-RISLAB/OverlapMamba/blob/main/OverlapMamba/data_root_folder/pretrained_overlap_mamba.pth.tar) for training.
+You can resume from our pretrained model [here](https://github.com/SCNU-RISLAB/OverlapMamba/blob/main/data_root_folder/pretrained_overlap_mamba.pth.tar) for training.
 
 
 ### Testing
 
-Once a model has been trained , the performance of the network can be evaluated. Before testing, the parameters shoud be set in [config.yaml](https://github.com/SCNU-RISLAB/OverlapMamba/blob/main/OverlapMamba/config/config.yml)
+Once a model has been trained , the performance of the network can be evaluated. Before testing, the parameters shoud be set in [config.yaml](https://github.com/SCNU-RISLAB/OverlapMamba/blob/main/config/config.yml)
 
 - `test_seqs`: sequence number for evaluation which is "00" in our work.
 - `test_weights`: path of the pretrained model.
