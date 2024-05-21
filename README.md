@@ -5,7 +5,7 @@
 <img src="./fig.png" width="50%">
 </p>
 <b><p align="center" style="margin-top: -20px;">
-Overview of OverlapMamba </b></p>
+ Core idea of the proposed OverlapMamba </b></p>
 
 ### 💾Environment
 
