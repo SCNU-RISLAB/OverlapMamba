@@ -1,4 +1,4 @@
-![image](https://github.com/SCNU-RISLAB/OverlapMamba/assets/103089062/3ca49bf9-fa3a-43be-856a-2d4a954d3743)# OverlapMamba: Novel Shift State Space Model for LiDAR-based Place Recognition
+# OverlapMamba: Novel Shift State Space Model for LiDAR-based Place Recognition
 
 
 <p align="center">
