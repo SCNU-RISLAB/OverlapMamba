@@ -2,7 +2,7 @@
 
 
 <p align="center">
-<img src="./fig.png" width="90%">
+<img src="./fig.png" width="50%">
 </p>
 <b><p align="center" style="margin-top: -20px;">
 Overview of OverlapMamba </b></p>
